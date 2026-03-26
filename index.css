@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+        </header>
+    <main>
+        <!--Div for the calculator as a whole-->
+        <div id="calculator">
+            <!--Input type text, id set to display to display whats going on in the calculator-->
+            <input type=text id="display" readonly>
+            <!--There will be the amount of buttons that are in the array-->
+            <div id="buttons"></div>
+        </div>
+    </main>
+        <!--Links the javascript to the index-->
+        <script src="script.js"></script>
+    </body>
+</html>
