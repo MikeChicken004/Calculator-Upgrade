@@ -1,0 +1,73 @@
+/*css of body, will make background tan, align items (calculator) to the center and set the height of it. This also sets the display of the buttons to flex.*/
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(250, 240, 217);
+}
+
+
+
+/*Sets the calculator color to gray, the border radius to 4px, the max-width to 500px, and overflow: hidden to hide an additional background color once the text is too big*/
+#calculator{
+    background-color: #b6b2b2;
+    border-radius: 4px;
+    width: 535px;
+    overflow: clip;
+}
+
+/*The display of the screen shows the math that is going on. The width expands through the whole top of the calculator. */
+#display{
+    width: 510px;
+    height: 100px;
+    padding: 20px;
+    font-size: 3rem;
+    border: none;
+    background-color: #ebe1e1;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+/*******************Styles each button**************************/
+button{
+    width: 125px;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    border-spacing: 10px;
+    background: rgb(255, 255, 255);
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: transform 0.3s ease;
+    gap: 10px;
+    filter: grayscale(0%) contrast(90%) brightness(1.0);
+    margin: 2px;
+}
+
+/*When hovered, the buttons turn dark gray with a lower contrast, brightness and grayscale*/
+button:hover{
+    transform: scale(1.1);
+    filter: none;
+    filter: grayscale(40%) contrast(50%) brightness(0.5);
+}
+
+/*When clicked or held on (active), the button changes into a darker shade of gray with a lower contrast, brightness and grayscale*/
+button:active{
+    transform: scale(1.2);
+    filter: none;
+    filter: grayscale(50%) contrast(50%) brightness(0.4);
+}
+
+p {
+    font-size: 20px;
+}
